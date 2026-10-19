@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escape Game — Mission 404</title>
+  <meta name="description" content="Réservez Mission 404, un escape game immersif à vivre en équipe.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- BANNER -->
+  <div class="banner">
+    <div class="container">
+      <h1>MISSION 404</h1>
+      <h2>Saurez-vous sortir avant la fin du compte à rebours ?</h2>
+      <a href="#reservation" class="btn btn-primary">Réserver une mission</a>
+    </div>
+  </div>
+
+  <!-- PRESENTATION -->
+  <div class="container">
+    <h2 class="text-center">Entrez dans le jeu</h2>
+    <p>Vous avez 60 minutes, une équipe et une mission à accomplir. Chez Mission 404, vous êtes enfermés dans un univers mystérieux rempli d'indices, de codes secrets et d'énigmes. Chaque détail peut vous aider… ou vous faire perdre du temps.</p>
+    <p>En famille, entre amis ou avec vos collègues, coopérez, observez et réfléchissez ensemble pour résoudre l'enquête avant la fin du chrono.</p>
+    <p><strong>Votre objectif :</strong> garder votre sang-froid, trouver la sortie et réussir la mission à temps.</p>
+  </div>
+
+  <!-- NOS ATOUTS -->
+  <div class="container">
+    <h2 class="text-center">Pourquoi tenter l'expérience ?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Immersion totale</h3>
+        <p>Des décors travaillés, une ambiance sonore et une histoire qui vous plonge directement dans l'action.</p>
+      </div>
+      <div class="card">
+        <h3>Esprit d'équipe</h3>
+        <p>Chacun apporte ses idées : communication et observation seront vos meilleurs atouts.</p>
+      </div>
+      <div class="card">
+        <h3>Un vrai défi</h3>
+        <p>60 minutes pour résoudre les énigmes. Le chrono tourne et chaque indice compte.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOS FORMULES -->
+  <div class="container">
+    <h2 class="text-center">Choisissez votre mission</h2>
+    <p class="text-center">Des formules adaptées à vos envies et à la taille de votre équipe.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Mission Découverte</h3>
+        <p>Une première expérience idéale pour les petits groupes.</p>
+        <p><strong>À partir de 20 € / personne</strong></p>
+      </div>
+      <div class="card">
+        <h3>Défi entre amis</h3>
+        <p>Une session pleine de suspense pour fêter un anniversaire ou se retrouver.</p>
+        <p><strong>À partir de 25 € / personne</strong></p>
+      </div>
+      <div class="card">
+        <h3>Team Building</h3>
+        <p>Un challenge collectif pour renforcer la cohésion de votre équipe.</p>
+        <p><strong>Tarif sur demande</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESERVATION -->
+  
+<div class="container" id="reservation">
+  <h2 class="text-center">Réserve ta mission</h2>
+  <p class="text-center">Remplis le formulaire pour nous contacter.</p>
+
+  <form onsubmit="document.getElementById('merci').innerHTML='Merci ! Ta demande est prise en compte.'; return false;">
+    <p><input type="text" placeholder="Ton nom" required></p>
+    <p><input type="email" placeholder="Ton e-mail" required></p>
+    <p>
+      <select required>
+        <option value="">Choisis ta mission</option>
+        <option>Mission Découverte</option>
+        <option>Défi entre amis</option>
+        <option>Team Building</option>
+      </select>
+    </p>
+    <p><input type="date" required></p>
+    <button class="btn btn-primary" type="submit">Envoyer</button>
+    <p id="merci"></p>
+  </form>
+</div>
+
+
+</body>
+</html>
